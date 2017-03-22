@@ -26,8 +26,18 @@ include "front/header.php";
 	}
 ?>
 <main>
-	
+	<iframe src="ExternalCall_test.html" frameborder="0" scrolling="no"></iframe>
+	<a href="formulaire.php">Si tu n'as pas d'idée viens ici</a>
 </main>
+<script>
+	$.ajax({
+		type: "POST",
+		url: '/send_JSON.php',
+		data: {
+		    data : JSON.stringify({color:'rouge'})
+		}
+	});
+</script>
 <?php 
 include "front/footer.php";
 ?>
