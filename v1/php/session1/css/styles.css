@@ -1,0 +1,191 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+body {
+    margin: 0 auto;
+    background: #fffeff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #272527;
+}
+
+
+/** ---------------------/ PAGE CONCOURS /------------------ **/
+
+/* ------------------------- HEADER ---------------------- */
+
+.nav-header {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 1.5em auto;
+}
+
+.nav-header li {
+    display: inline-block;
+    margin: 0 3em;
+    position: relative;
+}
+
+.nav-header:after {
+    display: block;
+    position: absolute;
+    left: 31.5%;
+    top: 11.5%;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    content: "";
+    transition: 0.3s;
+}
+
+.nav-header:hover:after {
+    width: 5%;
+}
+
+.nav-side-user {
+    width: 10%;
+    margin: 1% 85%;
+}
+
+.nav-side-user img.bag {
+    width: 12%;
+    margin: auto 1em;
+}
+
+
+/* -------------------------- MAIN------------------------ */
+
+main figure img.trottinette {
+    width: 100%;
+}
+
+main {
+    background: #f6f4f6;
+    text-align: center;
+}
+
+.main-content {
+    margin: 0 auto;
+    width: 75%;
+}
+
+h1 {
+    color: #272527;
+    margin: 1.2em auto;
+    width: 74%;
+    font-size: 3.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+p {
+    text-align: justify;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+span.button-link {
+    border: solid #272527 2px;
+    margin: 8% auto 58px auto;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    color: #272527;
+    display: inline-block;
+}
+
+
+/* ------------------------- FOOTER ---------------------- */
+
+.social-networks {
+    text-align: center;
+    margin: 58px auto 1em auto;
+}
+
+.social-networks img {
+    width: 2%;
+    padding: 0 1.5em;
+}
+
+.nav-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-footer li {
+    display: inline-block;
+    padding: 0 0.8em;
+    text-transform: uppercase;
+}
+
+.nav-footer li a {
+    font-weight: 700;
+    font-size: 0.5em;
+}
+
+.newsletter {
+    margin: 2em auto 4em;
+    width: 100%;
+}
+
+.newsletter input.newsletter-login {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    padding: 1.4em 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: #fffeff;
+    color: #9b999b;
+    font-size: 0.8em;
+}
+
+
+/** ---------------------/ HOMEPAGE /------------------ **/
+
+/* -------------------------- MAIN------------------------ */
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    
+}
+
+span.button-link-homepage {
+    border: solid #272527 2px;
+    margin: 8% auto 58px auto;
+    padding: 0.4em 1.8em;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    color: #272527;
+    display: inline-block;
+}
+
+
+
+/* ----------------------- COLONNES ---------------------- */
+
+
+/* ---------------------- MEDIA QUERIES ------------------ */

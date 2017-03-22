@@ -19,12 +19,12 @@ if (isset($_SESSION['id'])) {
 				<input type="text" name="nom" id="nom" value="<?= $_POST['nom'];?>"  required>
 			</div>
 			<div>
-				<label for="pseudo">Ton pseudo :</label>
-				<input type="text" id="pseudo" name="pseudo" value="" required>
-			</div>
-			<div>
 				<label for="prenom">Prénom :</label>
 				<input type="text" name="prenom" id="prenom" value="<?= $_POST['prenom'];?>" required>
+			</div>
+			<div>
+				<label for="pseudo">Ton pseudo :</label>
+				<input type="text" id="pseudo" name="pseudo" value="" required>
 			</div>
 			<div>
 				<label for="age">Ton âge :</label>

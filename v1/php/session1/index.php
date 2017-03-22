@@ -11,10 +11,12 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="utf-8">
+    <title>My Urban Ride</title>
+    <link rel="stylesheet" href="css/connexion.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
 	<?php 
@@ -31,5 +33,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 			</div>';	
 		}
 	?>
-</body>
-</html>
+<?php 
+include "front/footer.php";
+?>
