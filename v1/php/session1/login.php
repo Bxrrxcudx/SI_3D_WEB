@@ -38,44 +38,64 @@ if (isset($_POST['Envoyer'])) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>connexion</title>
+    <meta charset="utf-8">
+    <title>My Urban Ride</title>
+    <link rel="stylesheet" href="css/connexion.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 </head>
-<style media="screen">
-  body{
-    margin: auto;
-    width: 50%;
-
-  }
-  main{
-
-    height: 100vh;
-    width: 100%;
-
-  }
-  form{
-    margin-top:20%;
-    border: 1px solid #000;
-    height: auto;
-  }
-  label{
-    display: block;
-  }
-</style>
 <body>
+  <header>
+    <div class="nav-side-user">
+      <img class="bag" src="img-layout/panier.png" alt="bag">
+    </div>
+    <nav class="nav-header">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Pimp Your Ride</a></li>
+        <li><a href="">Nos Designs</a></li>
+        <li><a href="">Nos Accessoires</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
-      <label>pseudo</label>
-      <input type="login" name="pseudo" value="">
-      <label>password</label>
-      <input type="password" name="mdp" value="">
-      <label>
-      <input type="submit" name="Envoyer" value="Connexion">
-      </label>
-      <a href="signup.php">Inscit Toi !!</a>
-    </form>
+    <div class="main-content">
+      <div class="info">
+      <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+        <div class="id">
+          <label for="id">Identifiant</label>
+          <input type="login" name="pseudo" value="" id="id">
+        </div>
+        <div class="password">
+          <label for="password">Mot de passe</label>
+          <input type="password" name="mdp" value="" id="password">
+        </div>
+          <div class="button">
+            <input type="submit" value="Connexion" name="Envoyer">
+            <a href="signup.php">Inscription</a>
+          </div>
+        </form>
+      </div>
+    </div>
   </main>
+  <footer>
+    <div class="social-networks">
+      <img src="img-layout/logo-facebook.png" alt="facebook">
+      <img src="img-layout/logo-insta.png" alt="insta">
+      <img src="img-layout/logo-twitter.png" alt="twitter">
+    </div>
+    <nav class="nav-footer">
+      <li><a href="">faq</a></li>
+      <li><a href="">mentions légales</a></li>
+      <li><a href="">contact</a></li>
+      <li><a href="">à propos</a></li>
+    </nav>
+    <div class="newsletter">
+      <form action="post">
+        <input class="newsletter-login" type="text" placeholder="Inscrivez-vous à la Newsletter !" id="newsletter">
+      </form>
+    </div>
+  </footer>
 </body>
 </html>
