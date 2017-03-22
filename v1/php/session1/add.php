@@ -22,7 +22,7 @@ if ($_POST['pseudo'] == $row['pseudo']) {
 	$stmt = $pdo->prepare($sql);
 	$stmt->bindValue(":pseudo", htmlentities($_POST['pseudo']));
 	$stmt->bindValue(":nom", htmlentities($_POST['nom']));
-	$stmt->bindValue(":prenom", h tmlentities($_POST['prenom']));
+	$stmt->bindValue(":prenom", htmlentities($_POST['prenom']));
 	$stmt->bindValue(":age", htmlentities($_POST['age']));
 	$stmt->bindValue(":profession", htmlentities($_POST['profession']));
 	$stmt->bindValue(":mdp", htmlentities($_POST['mdp']));

@@ -4,15 +4,11 @@ session_start();
 if (isset($_SESSION['id'])) {
 	header('Location: profil.php');
 } else{
-	require_once "add.php";
-	?>
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Formulaire d'Inscription</title>
-	</head>
-	<body>
+	require "add.php";
+?>
+<?php 
+include "front/header.php";
+?>
 		<form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
 			<div>
 				<label for="nom">Nom :</label>
@@ -41,6 +37,7 @@ if (isset($_SESSION['id'])) {
 			<input type="submit" value="Inscris-toi" name="Envoyer">
 			<a href="login.php">Connexion</a>
 		</form>
-	</body>
-	</html>
+<?php 
+include "front/footer.php"
+?>
 <?php } ?>

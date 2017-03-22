@@ -10,22 +10,21 @@ $stmt->bindValue(":id", $_SESSION['id']);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Mon Profil</title>
-</head>
-<body>
-	<?php if (isset($_SESSION['id'])) :?>
-	<p>
-		Salut,
-		<?= $row['prenom']." ".$row['nom']?> et tu as <?= $row['age']?> ans !
-	</p>
+<?php 
+include "front/header.php"; 
+?>	
+<?php if (isset($_SESSION['id'])) :?>
+<div class="connexion">
 	<a href="logout.php">Déconnexion</a>
-	<?php else :?>
-		<p>Vous n'êtes plus connecté</p>
-		<a href="index.php">Inscris-toi</a>
-	<?php endif; ?>
-</body>
-</html>
+</div>
+<p>
+	Salut,
+	<?= $row['prenom']." ".$row['nom']?> et tu as <?= $row['age']?> ans !
+</p>
+<?php else :?>
+	<p>Vous n'êtes plus connecté</p>
+	<a href="signup.php">Inscris-toi</a>
+<?php endif; ?>
+<?php 
+include "front/footer.php";
+?>
