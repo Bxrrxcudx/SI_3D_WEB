@@ -10,6 +10,11 @@ if (isset($_SESSION['id'])) {
 include "front/header.php";
 ?>
 		<form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+		<?php 
+		if (isset($message)) {
+			echo $message;
+		}
+		?>
 			<div>
 				<label for="nom">Nom :</label>
 				<input type="text" name="nom" id="nom" value="<?= $_POST['nom'];?>"  required>

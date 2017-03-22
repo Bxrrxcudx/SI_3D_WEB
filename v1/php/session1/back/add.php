@@ -9,12 +9,8 @@ $stmt->bindValue(":pseudo", $_POST['pseudo']);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($_POST['pseudo'] == $row['pseudo']) {
-	// echo 'ce pseudo existe déjà';
-	// header('refresh:2;url=index.php');
-	// exit();
+	$message = 'ce pseudo existe déjà';
 } else {
-	// var_dump($row);
-	// die();
 	session_start();
 	$sql = "
 		INSERT INTO `profils`(`mdp`, `nom`,`prenom`,`age`,`profession`, `pseudo`) 
