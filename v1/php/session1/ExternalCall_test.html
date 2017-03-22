@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | WebWeek</title>
@@ -201,26 +200,7 @@
         /*-----------------------------------*/
     </style>
 </head>
-
 <body>
-
-    <header>
-        <div class="nav-side-user">
-            <span class="login"><a href="connexion.html">S'identifier</a></span>
-            <img class="bag" src="img-layout/panier.png" alt="bag">
-        </div>
-        <nav class="nav-header">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Pimp Your Ride</a></li>
-                <li><a href="">Nos Designs</a></li>
-                <li><a href="">Nos Accessoires</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    <h1>PIMP YOUR RIDE</h1>
-
     <div class="content">
         <div id="unityPlayer">
             <div class="missing">
@@ -234,40 +214,6 @@
                 </a>
             </div>
         </div>
-    </div>
-
-
-    <footer>
-        <p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-        <div class="social-networks">
-            <img src="img-layout/logo-facebook.png" alt="facebook">
-            <img src="img-layout/logo-insta.png" alt="insta">
-            <img src="img-layout/logo-twitter.png" alt="twitter">
-        </div>
-
-        <nav class="nav-footer">
-            <li><a href="">faq</a></li>
-            <li><a href="">mentions légales</a></li>
-            <li><a href="">contact</a></li>
-            <li><a href="">à propos</a></li>
-        </nav>
-
-        <div class="newsletter">
-            <form action="post">
-                <input class="newsletter-login" type="text" placeholder="Inscrivez-vous à la Newsletter !" id="newsletter">
-            </form>
-        </div>
-
-    </footer>
-    <script>
-         $.ajax({
-            type: "POST",
-            url: '/send_JSON.php',
-            data: {
-                data : JSON.stringify({color:'rouge'})
-            }
-        });
-    </script>
+    </div>  
 </body>
-
 </html>
