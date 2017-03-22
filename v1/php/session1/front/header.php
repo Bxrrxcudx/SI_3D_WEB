@@ -14,7 +14,7 @@
     <nav class="nav-header">
       <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="">Pimp Your Ride</a></li>
+        <li><a href="game.php">Pimp Your Ride</a></li>
         <li><a href="">Nos Designs</a></li>
         <li><a href="">Nos Accessoires</a></li>
       </ul>

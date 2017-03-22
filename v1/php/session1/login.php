@@ -8,25 +8,23 @@ if (isset($_POST['Envoyer'])) {
   $stmt = $pdo-> prepare($sql);
   $stmt->bindValue(":pseudo", htmlentities($_POST['pseudo']));
   $stmt->execute();
-
+  
   $data = $stmt->fetch();
   if ($data['pseudo'] == $_POST['pseudo']) {
     if ($data['mdp'] == $_POST['mdp']) {
       setcookie('pseudo', $data['pseudo'], time()+10000);
       session_start();
-
       $_SESSION['pseudo'] = $data['pseudo'];
       $_SESSION['id'] = $data['id'];
       header('Location: ./profil.php');
+      exit();
     } else {
-      $message = '<p>Une erreur s\'est produite pendant votre identification.<br /> 
-      Le mot de passe n\'est pas correct.</p>';
-      echo $message;
+      $message = '<p class="error">Une erreur s\'est produite pendant votre identification.<br /> 
+      Le mot de passe ou le pseudo n\'est pas correct.</p>';
     }
   } else{
-      $message = '<p>Une erreur s\'est produite pendant votre identification.<br /> 
-      le pseudo entré n\'est pas correct.</p>';
-      echo $message;
+      $message = '<p class="error">Une erreur s\'est produite pendant votre identification.<br /> 
+      Le mot de passe ou  le pseudo entré n\'est pas correct.</p>';
   }
 }
 ?>
@@ -45,10 +43,15 @@ include "front/header.php";
           <label for="password">Mot de passe</label>
           <input type="password" name="mdp" value="" id="password">
         </div>
-          <div class="button">
-            <input type="submit" value="Connexion" name="Envoyer">
-            <a href="signup.php">Inscription</a>
-          </div>
+        <?php 
+        if (isset($message)) {
+          echo $message;
+        }
+        ?>
+        <div class="button">
+          <input type="submit" value="Connexion" name="Envoyer">
+          <a href="signup.php">Inscription</a>
+        </div>
         </form>
       </div>
     </div>
