@@ -1,3 +1,8 @@
+<?php 
+require_once "back/connect.php";
+session_start();
+include "front/header.php";
+?>
 <div class="main-content">
 <h1>Quel design pour vous ?</h1>
     <div class="form">
@@ -52,3 +57,6 @@
         </form>
     </div>
 </div>
+<?php 
+include "front/footer.php";
+?>
