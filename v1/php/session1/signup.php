@@ -1,10 +1,10 @@
 <?php 
-require_once "connect.php";
+require_once "back/connect.php";
 session_start();
 if (isset($_SESSION['id'])) {
 	header('Location: profil.php');
 } else{
-	require "add.php";
+	require "back/add.php";
 ?>
 <?php 
 include "front/header.php";

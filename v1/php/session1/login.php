@@ -1,5 +1,5 @@
 <?php
-require_once "connect.php";
+require_once "back/connect.php";
 if (isset($_POST['Envoyer'])) {
   $sql = "
     SELECT `id`, `pseudo`, `mdp`

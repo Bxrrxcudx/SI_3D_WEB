@@ -1,5 +1,5 @@
 <?php 
-require_once "connect.php";
+require_once "back/connect.php";
 $sql = "
 	SELECT `pseudo` 
 	FROM `profils`
