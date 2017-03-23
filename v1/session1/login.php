@@ -8,7 +8,7 @@ if (isset($_POST['Envoyer'])) {
   $stmt = $pdo-> prepare($sql);
   $stmt->bindValue(":pseudo", htmlentities($_POST['pseudo']));
   $stmt->execute();
-  
+  $POC = '';
   $data = $stmt->fetch();
   if ($data['pseudo'] == $_POST['pseudo']) {
     if ($data['mdp'] == $_POST['mdp']) {
