@@ -31,7 +31,7 @@ if (isset($_POST['Envoyer'])) {
 <?php 
 include "front/header.php";
 ?>
-  <main>
+  <main class="main-login">
     <div class="main-content">
       <div class="info">
       <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>My Urban Ride</title>
-    <link rel="stylesheet" href="css/connexion.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
