@@ -9,7 +9,7 @@ $stmt->bindValue(":pseudo", $_POST['pseudo']);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($_POST['pseudo'] == $row['pseudo']) {
-	$message = 'ce pseudo existe déjà';
+	$mess = 'ce pseudo existe déjà';
 } else {
 	session_start();
 	$sql = "
