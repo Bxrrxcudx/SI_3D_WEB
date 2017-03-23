@@ -8,6 +8,16 @@
 </head>
 <body>
     <header>
+        <?php if (isset($_SESSION['id'])) :?>
+            <div class="connexion">
+                <a href="logout.php">Déconnexion</a>
+                <a href="profil.php">Mon Profil</a>
+            </div>
+        <?php else :?>
+            <div class="connexion">
+                <a href="login.php">Connecte toi</a>
+            </div>
+        <?php endif; ?>
         <div class="nav-side-user">
           <img class="bag" src="img-layout/panier.png" alt="bag">
         </div>
