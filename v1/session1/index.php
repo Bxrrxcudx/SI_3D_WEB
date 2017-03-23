@@ -15,14 +15,10 @@ include "front/header.php";
 ?>
 <?php 
 	if (isset($_SESSION['id'])) {
-		echo '<div class="connexion">
-		<a href="logout.php">Déconnexion</a>
-		<a href="profil.php">Mon Profil</a>
-		</div>';
 	} 
 	else {
-		echo '<div class="connexion">
-		<a href="login.php">Connexion</a>';	
+		// echo '<div class="connexion">
+		// <a href="login.php">Connexion</a></div>';	
 	}
 ?>
 <main>
