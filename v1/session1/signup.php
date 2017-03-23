@@ -11,11 +11,6 @@ include "front/header.php";
 ?>
 <main class="main-signup">
 	<form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
-	<?php 
-	if (isset($message)) {
-		echo $message;
-	}
-	?>
 		<div>
 			<label for="nom">Nom :</label>
 			<input type="text" name="nom" id="nom" value="<?= $_POST['nom'];?>"  required>
@@ -40,6 +35,9 @@ include "front/header.php";
 			<label for="mdp">Mot de passe :</label>
 			<input type="password" name="mdp" id="mdp" required>
 		</div>
+		<?php if (isset($_POST['prenom'])) :?>
+		<div><?php echo $mess ?></div>
+		<?php endif ?>
 		<input type="submit" value="Inscris-toi" name="Envoyer">
 		<a href="login.php">Connexion</a>
 	</form>
