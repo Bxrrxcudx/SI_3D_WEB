@@ -19,7 +19,14 @@ include "front/header.php";
 <main class="custom-page">
 	<div class="main-content">
 		<h1 class="title-pimp">Pimp Your Ride</h1>
-	    <iframe width="360" height="215" src="ExternalCall_test.html" frameborder="0" allowfullscreen></iframe>
+		<div class="iframe">
+			<a class="bukket" href="index.php" >
+				
+			</a>
+			<iframe width="1200" height="850" src="Oxelo_Beta_External_Call.html" frameborder="0" allowfullscreen scrolling="no">
+	    </iframe>
+
+		</div>
 	</div>
     <section class="custom clearfix">
         <article class="design">
@@ -72,7 +79,7 @@ include "front/header.php";
 		type: "POST",
 		url: '/send_JSON.php',
 		data: {
-		    data : JSON.stringify({color:'rouge'})
+		    data : JSON.stringify({color:'redneck'})
 		}
 	});
 </script>

@@ -10,3 +10,4 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(":id", $_SESSION['id']);
 $stmt->bindValue(":design", $_POST['data']);
 $stmt->execute();
+echo($_POST[]);
