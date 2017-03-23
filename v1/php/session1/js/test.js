@@ -71,7 +71,7 @@ function sendData()
 {
 	$.ajax({
 		type: "POST",
-  		url: '/game.php',
+  		url: '/send_JSON.php',
   		data: {
   			data : JSON.stringify(userSettings)
   		}
