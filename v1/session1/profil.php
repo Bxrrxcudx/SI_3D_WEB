@@ -25,6 +25,40 @@ include "front/header.php";
 	<p>Vous n'êtes plus connecté</p>
 	<a href="signup.php">Inscris-toi</a>
 <?php endif; ?>
+	<main>
+		<div class="profil">
+			<h2>Mon Profil</h2>
+			<figure>
+				<img src="https://placehold.it/450x300" alt="">
+				<figcaption>Fait le 12/12/12</figcaption>
+			</figure>
+			<div class="design">
+				<div class="history">
+					<h3>Mes derniers design</h3>
+					<figure>
+						<img src="https://placehold.it/225x150" alt="">
+						<figcaption>Fait le 12/12/12</figcaption>
+					</figure>
+					<figure>
+						<img src="https://placehold.it/225x150" alt="">
+						<figcaption>Fait le 12/12/12</figcaption>
+					</figure>
+					<figure>
+						<img src="https://placehold.it/225x150" alt="">
+						<figcaption>Fait le 12/12/12</figcaption>
+					</figure>
+					<figure>
+						<img src="https://placehold.it/225x150" alt="">
+						<figcaption>Fait le 12/12/12</figcaption>
+					</figure>
+					<figure>
+						<img src="https://placehold.it/225x150" alt="">
+						<figcaption>Fait le 12/12/12</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</main>
 <?php 
 include "front/footer.php";
 ?>
