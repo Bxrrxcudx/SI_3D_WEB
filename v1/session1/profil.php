@@ -14,7 +14,40 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 include "front/header.php"; 
 ?>	
 <?php if (isset($_SESSION['id'])) :?>
-<main>
+<style>
+.profils {
+}
+
+.profils h2 {
+	font-size: 2em;
+}
+
+.profils button {
+	background: ;
+	font-size: 1.2em;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 1em 2em;
+	margin: 20px;
+	transition: .2s ease-in-out; 	
+}
+
+.profils button:hover {
+	background: #dadada;
+	cursor: pointer;
+}
+
+.profils .design .history {
+    display: inline-block;
+    text-align: center;
+}
+
+.profils .design .history figure {
+	float: left;
+}
+
+</style>
+<main class="profils">
 		<div class="profil">
 			<h2>Mon Profil</h2>
 			<div class="infos">
@@ -24,17 +57,18 @@ include "front/header.php";
 			</div>
 			<figure>
 				<img src="https://placehold.it/450x300" alt="">
-				<figcaption>Fait le 12/12/12</figcaption>
+				<figcaption>Fait le 24/03/17</figcaption>
 			</figure>
-			<div class="design">
-				<div class="history">
+			<button>Passer la commande</button>
+			<!-- <div class="design">
+				<div class="history clearfix">
 					<h3>Mes derniers design</h3>
 					<figure>
 						<img src="https://placehold.it/225x150" alt="">
 						<figcaption>Fait le 12/12/12</figcaption>
 					</figure>
 					<figure>
-						<img src="https://placehold.it/225x150" alt="">
+							<img src="https://placehold.it/225x150" alt="">
 						<figcaption>Fait le 12/12/12</figcaption>
 					</figure>
 					<figure>
@@ -50,7 +84,7 @@ include "front/header.php";
 						<figcaption>Fait le 12/12/12</figcaption>
 					</figure>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</main>
 <?php else :?>
