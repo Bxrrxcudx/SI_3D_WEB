@@ -74,18 +74,9 @@ a {
 
 /* -------------------------- MAIN------------------------ */
 
-
-
-main {
-    background: #f6f4f6;
-    text-align: center;
-}
-
 .main-content {
-    margin: 0 auto;
     padding: 1em 0 0 0;
     width: 50%;
-   
 }
 
 h1 {
@@ -95,7 +86,6 @@ h1 {
    font-style: italic;
     font-weight: bold;
     text-transform: uppercase;
-    
 }
 
 /*
@@ -110,8 +100,6 @@ p {
     font-weight: 400;
 }
 
-form {
-}
 
 form div {
     padding: 4px;

@@ -12,7 +12,7 @@
         </nav>
         <div class="newsletter">
             <form action="post">
-            <input class="newsletter-login" type="text" placeholder="Inscrivez-vous à la Newsletter !" id="newsletter">
+            <input class="newsletter-login" type="text" placeholder=" Inscrivez-vous à la Newsletter !" id="newsletter">
             </form>
         </div>
     </footer>

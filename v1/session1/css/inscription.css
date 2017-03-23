@@ -77,15 +77,11 @@ a {
 
 
 main {
-    background: #f6f4f6;
-    text-align: center;
     height: 24.2em;         /* 387px sur la maquette*/
 }
 
 .main-content {
-    margin: 0 auto;
     padding: 6em 0 0 0;
-/*    width: 75%;*/
     width: 20em;
 }
 
