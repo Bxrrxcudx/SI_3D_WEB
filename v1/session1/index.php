@@ -32,7 +32,7 @@ include "front/header.php";
             <div class="visual-titles">
                 <h1 class="main-title">Pimp your ride</h1>
                 <h2 class="main-title-second">La trottinette sur mesure</h2>
-                <p class="homepage-pimp-button"><a href="custom.html">Je pimp</a></p>
+                <p class="homepage-pimp-button"><a href="game.php">Je pimp</a></p>
             </div>
 
         </div>
@@ -45,7 +45,7 @@ include "front/header.php";
 
                 <p>Aimeriez vous voir votre création dans notre prochaine pub ?</p>
 
-                <div class="homepage-button-link"><a href="concours.html">Participer</a></div>
+                <div class="homepage-button-link"><a href="concours.php">Participer</a></div>
 
             </div>
 
