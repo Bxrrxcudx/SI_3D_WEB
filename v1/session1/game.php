@@ -30,6 +30,7 @@ include "front/header.php";
 	</div>
     <section class="custom clearfix">
         <article class="design">
+        	<a href="thanks.php">Partagez</a>
             <figure>
                 <figcaption>
                     <h3 class="article-title first">Designez votre trotinette</h3>

@@ -34,5 +34,5 @@ if ($_POST['pseudo'] == $row['pseudo']) {
 	$data = $stmt->fetch(PDO::FETCH_ASSOC);
 	$_SESSION['pseudo'] = $_POST['pseudo'];
 	$_SESSION['id'] = $data['id'];
-	header('location:./profil.php');
+	header('location:./index.php');
 }
