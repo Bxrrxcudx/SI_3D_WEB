@@ -75,6 +75,23 @@ a {
     width: 12%;
     margin: auto 1em;
 }
+
+nav img {
+    width: 5%;
+    float: left;
+}
+
+.connexion {
+    display: inline-block;
+    text-align: left;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 5%;
+}
 /* -------------------------- MAIN ACCUEIL------------------------ */
 
 main figure img.trottinette {

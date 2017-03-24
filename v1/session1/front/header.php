@@ -16,12 +16,13 @@
             </div>
         <?php else :?>
             <div class="connexion">
-                <a href="login.php">Connecte toi</a>
+                <a href="login.php">Connexion</a>
             </div>
         <?php endif; ?>
         <div class="nav-side-user">
           <img class="bag" src="img-layout/panier.png" alt="bag">
         </div>
+        <img src="img-layout/logo-mur.png" id="logo">
         <nav class="nav-header">
           <ul>
             <li><a href="index.php">Accueil</a></li>
