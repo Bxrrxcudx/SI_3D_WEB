@@ -56,7 +56,7 @@ include "front/header.php";
 				<p><?= $row['age']?> ans</p>
 			</div>
 			<figure>
-				<img src="https://placehold.it/450x300" alt="">
+				<img src="img-content/Screenshot_2.png" alt="">
 				<figcaption>Fait le 24/03/17</figcaption>
 			</figure>
 			<button>Passer la commande</button>
